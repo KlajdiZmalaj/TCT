@@ -82,10 +82,10 @@
 <script>
   //ush5
   const shtoUseratDiv = async () => {
+    //po shtoj nje koment
     const thirrja = await fetch("https://jsonplaceholder.typicode.com/users");
     const users = await thirrja.json();
     //krijojme ul
-    const tagContainer = document.createElement("section");
     tagContainer.id = "container";
     document.body.append(tagContainer);
 

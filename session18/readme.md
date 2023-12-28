@@ -24,7 +24,7 @@
 
 2. Operatoret logjike / Operatoret aritmetike
 
-3. Kushtet ( if/else/switch )
+3. Kushtet ( if/else/switch ) , Clilet (for while doWhile)
 
 4. Funksionet ( Arrow Functions )
 
@@ -39,3 +39,5 @@
 # Ushtrim Perseritje
 
 https://themewagon.github.io/feane/
+
+API : https://api.npoint.io/96cde51098094fdb17c2
