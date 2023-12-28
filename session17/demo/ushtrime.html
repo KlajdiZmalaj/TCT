@@ -1,0 +1,102 @@
+<script>
+  //ush1
+  const getData = async (type) => {
+    if (type == "users") {
+      const req_users = await fetch("https://jsonplaceholder.typicode.com/users");
+      const data_users = await req_users.json();
+      console.log("Te dhenat per userat jane : ", data_users);
+    }
+    if (type === "todos") {
+      const req_todos = await fetch("https://jsonplaceholder.typicode.com/todos");
+      const data_todos = await req_todos.json();
+      console.log("Te dhenat per todos jane : ", data_todos);
+    }
+  };
+  //ben fetch API per todos
+  getData("todos");
+  //ben fetch API per users
+  getData("users");
+  //sben asgje pasi ska if per ===posts
+  getData("posts");
+</script>
+
+<script>
+  //ush 2
+  const getPostData = async (id_e_dhene) => {
+    const thirrja = await fetch(`https://jsonplaceholder.typicode.com/posts/${id_e_dhene}`);
+    const postimiGjetur = await thirrja.json();
+
+    console.log("Postimi gjetur eshte : ", postimiGjetur);
+
+    return postimiGjetur;
+  };
+  //thiir funx dhe jepi IO 10 si argument dhe ben fetch api me /post/10 dhe kthen objektin e ati posti
+  getPostData(10);
+  // ~njesoj po ktu ka per id 15
+  getPostData(15);
+</script>
+
+<script>
+  //ush3
+  const shtoUseratLI = async () => {
+    const thirrja = await fetch("https://jsonplaceholder.typicode.com/users");
+    const users = await thirrja.json();
+    //krijojme ul
+    const tagUL = document.createElement("ul");
+    document.body.append(tagUL);
+
+    for (let index = 0; index < users.length; index++) {
+      const listaEKrijuar = document.createElement("li");
+      listaEKrijuar.innerText = `emir eshte : ${users[index].name} dhe email : ${users[index].email}`;
+      tagUL.append(listaEKrijuar);
+    }
+    console.log("Userat jane : ", users);
+  };
+  shtoUseratLI();
+</script>
+
+<script>
+  //ush4
+  const funx = async () => {
+    const thirrja = await fetch("https://jsonplaceholder.typicode.com/photos");
+    const photos = await thirrja.json();
+    console.log("photos jane : ", photos);
+
+    const img1 = document.createElement("img");
+    img1.src = photos[0].url;
+
+    const img2 = document.createElement("img");
+    img2.src = photos[1].url;
+
+    const img3 = document.createElement("img");
+    img3.src = photos[2].url;
+    img3.className = "img3Class";
+
+    document.body.append(img1);
+    document.body.append(img2);
+    document.body.append(img3);
+  };
+  funx();
+</script>
+
+<script>
+  //ush5
+  const shtoUseratDiv = async () => {
+    const thirrja = await fetch("https://jsonplaceholder.typicode.com/users");
+    const users = await thirrja.json();
+    //krijojme ul
+    const tagContainer = document.createElement("section");
+    tagContainer.id = "container";
+    document.body.append(tagContainer);
+
+    for (let index = 0; index < users.length; index++) {
+      const userDiv = (tagContainer.innerHTML += `<dvi>
+    <h2> ${users[index].company.name} </h2>
+    <p>  ${users[index].company.catchPhrase} </p>
+    <p>  ${users[index].company.bs} </p>
+</div>`);
+    }
+    console.log("Userat jane : ", users);
+  };
+  shtoUseratDiv();
+</script>

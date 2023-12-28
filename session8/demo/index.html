@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!---->
+    <form action="send.php" onsubmit="myfunction()">
+      <label for="inputi1">Emri : </label>
+      <input id="inputi1" type="text" placeholder="Shkruaj emrin ketu..." />
+
+      <label for="inputi2">Mbiemri : </label>
+      <input id="inputi2" type="text" placeholder="Shkruaj mbiemrin ketu..." />
+
+      <label for="inputi3">Mosha : </label>
+      <input id="inputi3" type="number" placeholder="Shkruaj moshen ketu..." />
+
+      <button type="submit">Dergo</button>
+    </form>
+    <!---->
+
+    <form id="forma2" action="login.php" onsubmit="myfunction2()">
+      <label for="inputi4">E-mail : </label>
+      <input name="email" id="inputi1" type="email" placeholder="Shkruaj emrin ketu..." />
+
+      <label for="inputi5">Password : </label>
+      <input name="password" id="inputi2" type="password" placeholder="Shkruaj mbiemrin ketu..." />
+
+      <button type="submit">Login</button>
+    </form>
+
+    <form id="forma3">
+      <label for="checkbox1">Mashkull</label>
+      <input id="checkbox1" name="test" type="checkbox" placeholder="Shkruaj emrin ketu..." />
+
+      <label for="checkbox2">Femer</label>
+      <input id="checkbox2" name="test" type="checkbox" placeholder="Shkruaj emrin ketu..." />
+
+      <button type="submit">Send</button>
+    </form>
+
+    <form id="forma4">
+      <!-- <input type="color" /> -->
+      <!-- <input type="datetime-local" />
+      <input type="time" />
+      <input name="inputProfilePicture" type="file" /> -->
+      <select>
+        <option value=""></option>
+        <option value="ops_1">opsioni nr 1</option>
+        <option value="ops_2">opsioni nr 2</option>
+        <option value="ops_3">opsioni nr 3</option>
+        <option value="ops_4">opsioni nr 4</option>
+      </select>
+      <textarea name="" id=""> </textarea>
+      <button type="submit">Send</button>
+    </form>
+    <form>
+      <input name="gender" value="1" type="radio" />
+      <input name="gender" value="2" type="radio" />
+    </form>
+  </body>
+</html>

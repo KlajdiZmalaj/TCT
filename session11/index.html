@@ -1,0 +1,62 @@
+<script>
+  let var1 = 100;
+  let var2 = 200;
+
+  let me_i_madhi;
+
+  if (var1 > var2) {
+    me_i_madhi = var1;
+  }
+
+  if (var2 > var1) {
+    me_i_madhi = var2;
+  }
+
+  console.log("Me i madhi eshte : ", me_i_madhi);
+</script>
+
+<script>
+  const numri = Number(prompt("Vendosni numrin"));
+  const tekOseCift = numri % 2 == 0 ? "cift" : "tek";
+
+  console.log("Numri ", numri, " qe ju vendost eshte : ", tekOseCift);
+</script>
+
+<script>
+  var dita = "e Marte";
+  var numri_dites;
+
+  switch (dita) {
+    case "e Hene":
+      numri_dites = 1;
+      break;
+    case "e Marte":
+      numri_dites = 2;
+      break;
+    case "e Merkur":
+      numri_dites = 3;
+      break;
+    case "e Ente":
+      numri_dites = 4;
+      break;
+    case "e Premte":
+      numri_dites = 5;
+      break;
+    case "e Shtune":
+      numri_dites = 6;
+      break;
+    case "e Diel":
+      numri_dites = 7;
+      break;
+  }
+
+  console.log("Per diten : ", dita, " numri i kesaj dite eshte : ", numri_dites);
+</script>
+
+<script>
+  for (let i = 25; i <= 30; i++) {
+    if (i == 26 || i == 29) {
+      console.log("~Rrjeshti number ", i);
+    }
+  }
+</script>

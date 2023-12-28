@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body * {
+  font-family: "Roboto";
+}
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #fc4311;
+  height: 115px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav img {
+  width: 100px;
+  margin-left: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+  padding: 0px 20px 0px 20px;
+  font-size: 20px;
+}
+#backgroundSection {
+  background-image: url("./background.jpg");
+  color: white;
+  height: 570px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#backgroundSection p {
+  width: 70%;
+  text-align: center;
+  font-size: 17px;
+}
+
+#backgroundSection h1 {
+  font-size: 70px;
+  margin: 0 0 50px 0;
+}
+
+#backgroundSection div {
+  background-color: #fc4311;
+  color: white;
+  margin: 50px 0 0 0;
+  padding: 20px 50px;
+}
+
+#infosSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#infosSection h3 {
+  font-size: 45px;
+  width: 370px;
+  text-align: center;
+  border-bottom: 3px solid black;
+  padding: 0 0 20px 0;
+}
+#infosSection p {
+  width: 70%;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.left h4 {
+  font-size: 30px;
+  margin: 0;
+}
+
+#infosSection .left p {
+  margin: 0;
+  width: 100%;
+}

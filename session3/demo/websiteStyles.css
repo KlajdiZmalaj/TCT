@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+#infos {
+  width: 40%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background-color: gray;
+}
+#imazh {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  background-color: aqua;
+}
+#imazh img {
+  width: 100%;
+  border-radius: 50%;
+}
+#blocks {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background-color: blueviolet;
+  margin-top: 30px;
+}
+
+.block {
+  background-color: bisque;
+  padding: 20px;
+  color: black;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  margin: 10px;
+}
+.block h5 {
+  font-weight: bold;
+  font-size: 20px;
+}
+#locationDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

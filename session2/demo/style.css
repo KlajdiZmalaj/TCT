@@ -1,0 +1,51 @@
+/*importimi i fontit roboto me 2 lloje weights 900 dhe 400 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+body * {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/*border collapse ne cdo table cell*/
+th,
+tr,
+table,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+#p1 {
+  color: red;
+  font-size: 30px;
+  margin: 0;
+}
+#p2 {
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 15px;
+}
+h1 span {
+  font-weight: 900;
+  color: blue;
+  text-decoration: underline;
+}
+/*300px div i verdhe */
+.div1 {
+  background: yellow;
+  width: 300px;
+  height: 300px;
+}
+/*div brenda div 50% => 300px / 50% = 150px*/
+.div1 div {
+  width: 50%;
+  background-color: red;
+  height: 300px;
+}

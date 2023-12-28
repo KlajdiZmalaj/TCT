@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+      //Selectors
+      console.log("Elementi me id : test_id eshte : ", document.getElementById("test_id"));
+      console.log(document.getElementsByClassName("test2")[0]);
+      console.log(document.getElementsByTagName("h1"));
+      //
+      console.log("h1 me querySelector eshte : ", document.querySelector(".test2"));
+      //
+      const spaniPare = document.querySelector(" div > .p span:first-child");
+      //
+      console.log("By id : ", document.getElementById("test4"));
+      console.log("By query selector : ", document.querySelector("#test4"));
+    </script> -->
+    <!-- <a href="https://google.com">this is gopogle link</a> -->
+    <!-- <script>
+      //create elements and interact with properties
+      const Elementi_im = document.createElement("div");
+      Elementi_im.innerHTML = "Text brenda divit <p>this is a PPP</p>";
+      Elementi_im.id = "testId";
+
+      console.log("Elementi_im : >", Elementi_im);
+
+      const myParagraph = document.createElement("p");
+      myParagraph.id = "myP_id";
+      myParagraph.innerText = "asdasdasfs sdsdf ss ";
+      myParagraph.className = "klasaIme klasime222";
+      console.log("Paragrafi eshte : ", myParagraph);
+
+      const myLink = document.createElement("a");
+      myLink.href = "https://google.com";
+      myLink.innerText = "this is gopogle link 22";
+      console.log("linku im eshte : ", myLink);
+
+      document.body.append(myLink);
+    </script> -->
+
+    <script>
+      let elementi_div = document.createElement("div");
+      let paragraph_element = document.createElement("p");
+      let testP = document.createElement("p");
+      testP.innerText = "Hello...";
+      //
+      paragraph_element.innerText = "test texttt....";
+      //
+      elementi_div.id = "myDiv";
+      elementi_div.append(paragraph_element);
+      document.body.append(elementi_div);
+      //   //shton ne fund brenda
+      //   document.body.append(elementi_div);
+      //   //shton ne fillim brenda
+      //   document.body.prepend(elementi_div);
+      //   //shton para nga jashte
+      //   document.body.before(elementi_div);
+      //   //shton pas el nga jashte
+      //   document.body.after(elementi_div);
+      //   e zevendeson me
+      //   elementi_div.replaceWith(paragraph_element);
+      elementi_div.after(testP);
+      paragraph_element.style.color = "red";
+      paragraph_element.style.fontSize = "30px";
+      console.log("elementi_div", elementi_div);
+    </script>
+  </body>
+</html>

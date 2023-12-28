@@ -1,0 +1,67 @@
+#myDiv {
+  width: 20%;
+  height: 300px;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: 0.5s all;
+  margin-left: 50px;
+}
+#myDiv:before {
+  content: " ";
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  display: block;
+  border-radius: 100%;
+  position: relative;
+  right: 50px;
+}
+
+#myDiv:after {
+  background-color: yellow;
+  content: " ";
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url("./underHeaderImg.png");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+}
+#div2 {
+  margin-top: 100px;
+}
+#div2 p {
+  display: flex;
+  flex-direction: row;
+}
+#div2 p:before {
+  content: "This";
+  display: block;
+  margin-right: 5px;
+}
+#div2 p:after {
+  content: "paragraph";
+  display: block;
+  margin-left: 5px;
+}
+#div2:before {
+  content: "testtest";
+  display: block;
+}
+
+#div3 {
+  margin-top: 100px;
+  position: relative;
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  left: 0;
+  top: 0;
+  transition: 0.3s left;
+}
+#div3:hover {
+  left: 100px;
+  top: 100px;
+}

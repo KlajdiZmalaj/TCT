@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+      //kush me if else
+
+      if (4 < 5) {
+        //e verte
+        console.log("katra eshte me e vogel se 5 e vertete");
+      } else {
+        //e gabuar
+        console.log("e gabuar");
+      }
+      //kusht me ternery
+      4 < 5 ? console.log("katra eshte me e vogel se 5 e vertete") : console.log("e gabuar");
+      let numer = 4 < 3 ? "e verte" : "e gabuar";
+      console.log("a eshte 4 < 3 ? ", numer);
+    </script>
+
+    <script>
+      if (5 === -5) {
+        console.log("e vertete me if");
+      } else {
+        console.log("e gabuar me if");
+      }
+
+      5 === -5 ? console.log("e vertete me ternery") : console.log("e gabuar me ternery");
+
+      if (5 === "5" && 4 < 2) {
+        console.log("e verteteee !!!!");
+      } else {
+        console.log("e gabuar !!!!");
+      }
+
+      let var1 = 4 < 10;
+      let var2 = "stringgggg";
+      console.log("My booleans : ", var1, !var2);
+
+      let vlera = "3";
+
+      //Switch case condition
+      switch (vlera) {
+        case "10":
+          console.log("Vlera eshte 10");
+          break;
+        case "9":
+          console.log("Vlera eshte 9");
+          break;
+        case "8":
+          console.log("Vlera eshte 8");
+          break;
+
+        default:
+          console.log("Nuk ka asnje nga vlerat e mesiperme");
+          break;
+      }
+
+      //else if  condition
+      if (vlera === "10") {
+        console.log("Vlera eshte 10");
+      } else if (vlera === "9") {
+        console.log("Vlera eshte 9");
+      } else if (vlera === "8") {
+        console.log("Vlera eshte 8");
+      } else {
+        console.log("Nuk ka asnje nga vlerat e mesiperme");
+      }
+
+      const var5 = 5 < 10;
+
+      !var5 ? console.log("Po 5 eshte me e vogel se 10") : console.log("Jo 5 eshte me e madhe se 10");
+      var5 ? console.log("Jo 5 eshte me e madhe se 10") : console.log("Po 5 eshte me e vogel se 10");
+    </script>
+  </body>
+</html>

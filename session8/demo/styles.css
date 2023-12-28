@@ -1,0 +1,52 @@
+form {
+  border: 1px solid black;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+
+form input {
+  margin-bottom: 10px;
+  height: 40px;
+  border: 2px solid red;
+}
+form button {
+  height: 50px;
+  background-color: brown;
+  color: wheat;
+  border: 0;
+  outline: none;
+}
+
+form label {
+  font-size: 14px;
+  color: green;
+}
+#forma2 {
+  margin-top: 30px;
+}
+#forma3 {
+  margin-top: 30px;
+}
+
+#forma3 {
+  flex-flow: row wrap;
+}
+
+#forma3 label {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  justify-content: right;
+}
+#forma3 input {
+  width: 50px;
+}
+
+#forma3 button {
+  width: 100%;
+}

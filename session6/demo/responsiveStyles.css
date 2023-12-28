@@ -1,0 +1,31 @@
+#div1 {
+  background-color: black;
+  width: 400px;
+  height: 400px;
+}
+/*tablet styles*/
+@media (max-width: 1200px) {
+  #div1 {
+    background-color: rgb(255, 0, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  #div1 {
+    background-color: blue;
+  }
+  section {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  #div1 {
+    background-color: blue;
+  }
+}
+
+@media (max-width: 400px) {
+  #div1 {
+    background-color: rgb(251, 0, 255);
+  }
+}

@@ -1,0 +1,130 @@
+<script>
+  let kyeshtenjevariabel = "vlera";
+  let KyEshteNjeVariabel = "vlera"; //paskal
+  let kyEshteNjeVariabel = "vlera"; // camel
+  let ky_eshte_nje_variabel = "vlera"; // snake
+
+  // let ky-eshte-nje-variabel = "ky-eshte-nje-variabel"; // kebab
+
+  const WIDTH_VAR = 10;
+</script>
+
+<!-- <script>
+  let myObject = {
+    prop1: "this is a value for prop1",
+    prop2: "this is a value for prop2",
+  };
+  //
+  let myArray = ["this is a value for prop1", "this is a value for prop2", 2, [1, 2, 3], { key: "val" }];
+
+  console.log("fjalia e pare : ", myArray[4].key);
+  console.log("Madhesia e arrayt eshte : ", myArray.length);
+  console.log("Madhesia e arrayt brenda eshte : ", myArray[3].length);
+  console.log("shuma e indext 2 tr arryt eshte :  : ", myArray[2] + 5);
+
+  let studenti1 = { emri: "Klajdi", mbiemri: "Zmalaj", mosha: 24 };
+
+  const treStudentet = [
+    studenti1,
+    { emri: "Klajdi2", mbiemri: "Zmalaj2", mosha: 33 },
+    { emri: "Klajdi3", mbiemri: "Zmalaj3", mosha: 44 },
+  ];
+
+  console.log("studentet jane : ", treStudentet[0], treStudentet[1]);
+
+  let concatinatedArray = treStudentet.concat([
+    { emri: "andi", mbiemri: "sdsd", mosha: 22 },
+    { emri: "marjo", mbiemri: "sdsdsds", mosha: 66 },
+  ]);
+  console.log("Array i bashkuar eshtr : ", concatinatedArray);
+  concatinatedArray.unshift("paraaa");
+  console.log("Array i bashkuar eshtr  ~ 2: ", concatinatedArray);
+</script> -->
+
+<!-- <script>
+  let myArray = [1, 2, 3];
+  console.log("my array ka kto vlera 1: ", myArray);
+  //shtojme nga para 2 cop
+  myArray.unshift({});
+  myArray.unshift({ key1: "vallll" });
+
+  console.log("my array ka kto vlera 2: ", myArray);
+  //shtojme nga pas 1
+  myArray.push("Klajdi");
+
+  console.log("my array ka kto vlera 3: ", myArray);
+  //fshin nga mbrapa 1
+  myArray.pop();
+  //fshin nga para 2
+  myArray.shift();
+  myArray.shift();
+  console.log("my array ka kto vlera 4: ", myArray);
+</script> -->
+
+<script>
+  //problema 1
+  let gjeniVleren = [1, "3", 2.3, {}, "test", "A", { 5: "2" }];
+  console.log("Vlera per indexin e 5-te eshte : ", gjeniVleren[5]);
+
+  //problema 2
+
+  let nxenesi = {
+    emri: "Test",
+    mbiemri: "Test2",
+    lendet: {
+      fizike: [10, 9, 9],
+      matematike: [9, 8, 10],
+      letersi: [7, 8, 4],
+    },
+  };
+  console.log("Nota e 2-te e fizikes eshte : ", nxenesi.lendet.fizike[1]);
+
+  //problemei 3
+
+  nxenesi.lendet.fizike.push(4);
+  nxenesi.lendet.matematike.push(10);
+  nxenesi.lendet.letersi.push(8);
+
+  console.log("Notat e shtuara jane : ", nxenesi.lendet);
+
+  //problema 4
+
+  // function _calcMesatare(nota1, nota2, nota3, nota4) {
+  //   return (nota1 + nota2 + nota3 + nota4) / 4;
+  // }
+  const calcMesatare = (nota1, nota2, nota3, nota4) => (nota1 + nota2 + nota3 + nota4) / 4;
+
+  console.log(
+    "Mesatarja e fizikes eshte : ",
+    calcMesatare(
+      nxenesi.lendet.fizike[0],
+      nxenesi.lendet.fizike[1],
+      nxenesi.lendet.fizike[2],
+      nxenesi.lendet.fizike[3],
+    ),
+  );
+
+  console.log(
+    "Mesatarja e matematikes eshte : ",
+    calcMesatare(
+      nxenesi.lendet.matematike[0],
+      nxenesi.lendet.matematike[1],
+      nxenesi.lendet.matematike[2],
+      nxenesi.lendet.matematike[3],
+    ),
+  );
+
+  console.log(
+    "Mesatarja e letersise eshte : ",
+    calcMesatare(
+      nxenesi.lendet.letersi[0],
+      nxenesi.lendet.letersi[1],
+      nxenesi.lendet.letersi[2],
+      nxenesi.lendet.letersi[3],
+    ),
+  );
+  console.log(
+    "notat e bashkuara jane : ",
+    [].concat(nxenesi.lendet.letersi, nxenesi.lendet.matematike, nxenesi.lendet.fizike),
+  );
+</script>

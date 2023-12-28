@@ -1,0 +1,72 @@
+<!-- <script>
+  function funksioniIm(parametri1, parametri2, parametri3) {
+    const numri = Number(prompt("Vendosni numrin"));
+    const tekOseCift = numri % 2 == 0 ? "cift" : "tek";
+
+    console.log("Numri ", numri, " qe ju vendost eshte : ", tekOseCift);
+
+    console.log("Parametrat e funksionit jane : ", parametri1, parametri2, parametri3);
+  }
+  funksioniIm(10,20,30)
+
+</script> -->
+
+<script>
+  let var1 = 0;
+  let var2 = 1;
+
+  function klajdi() {
+    let var3 = 2;
+    console.log("Vlerat e variableve", var1, var2, var3);
+    return "OK u therrit , mbaroi";
+  }
+
+  function andi() {
+    let var3 = 22;
+    return var3 + 30;
+  }
+
+  const andi = () => {
+    let var3 = 22;
+    return var3 + 30;
+  };
+
+  let vleraeNumrave_brenda_andit = andi();
+  klajdi();
+  andi();
+  console.log("vlera e funx andi nga return eshte : ", andi(), vleraeNumrave_brenda_andit);
+  console.log(`vlera e funx andi nga return eshte : ${andi()}, ${vleraeNumrave_brenda_andit}`);
+</script>
+
+<script>
+  //Logjike + return
+  function shuma_e_numrave1(p1, p2) {
+    return p1 + p2;
+  }
+  //direkt return
+  const shuma_e_numrave2 = (p1, p2) => p1 + p2;
+
+  //Logjike + return
+  const shuma_e_numrave3 = (p1, p2) => {
+    console.log("Me logjike");
+    return p1 + p2;
+  };
+
+  var ktheVler = (p1, p2) => (p2 > p1 ? true : false);
+
+  const ktheVler2 = (p1, p2) => {
+    if (p2 > p1) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  function ktheVler3(p1, p2) {
+    if (p2 > p1) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+</script>

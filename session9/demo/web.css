@@ -1,0 +1,58 @@
+body * {
+  font-family: "Roboto";
+}
+header {
+  background-image: url("https://themewagon.github.io/feane/images/hero-bg.jpg");
+  display: flex;
+  height: 630px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  margin: 20px 40px;
+  height: 50px;
+}
+
+header nav span {
+  font-family: "Dancing Script";
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+}
+header nav ul li {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+header nav div {
+  display: flex;
+  align-items: center;
+}
+header nav div .fa {
+  margin-right: 10px;
+}
+header nav div button {
+  padding: 8px 30px;
+  background-color: #ffbe33;
+  color: #ffffff;
+  border-radius: 48px;
+}
+#heading {
+  color: white;
+  font-family: "Dancing Script";
+}
+#textWhite {
+  color: #ffffff;
+}

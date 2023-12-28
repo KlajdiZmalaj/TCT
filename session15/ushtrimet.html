@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*ush1*/
+      .myHeader {
+        color: red;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      /*ush1*/
+      let myHeaderVar = document.createElement("h1");
+      /*ush2*/
+      myHeaderVar.innerHTML = "Ky eshte nje header ";
+      //ush3
+      myHeaderVar.style.color = "blue";
+      myHeaderVar.style.fontSize = "50px";
+      myHeaderVar.className = "myHeader";
+      //ush4
+      let myDiv = document.createElement("div");
+      myDiv.append(myHeaderVar);
+      //ush5
+      let linku = document.createElement("a");
+      linku.href = "https://google.com";
+      linku.innerText = "Ky eshte nje link google";
+      //arrow funx i cili shto nje link para div
+      const shtoLinkParaDiv = () => {
+        myDiv.prepend(linku);
+      };
+      document.body.append(myDiv);
+      console.log("myDiv eshte : ", myDiv);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <style>
+      .container {
+        width: 600px;
+        height: 600px;
+        background-color: black;
+        display: flex;
+        position: relative;
+        margin: 100px;
+        flex-flow: column;
+        overflow: scroll;
+      }
+      .container div {
+        flex-shrink: 0;
+      }
+      #div1 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(139, 139, 139);
+      }
+      #div2 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(204, 79, 204);
+      }
+      #div3 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(103, 211, 36);
+      }
+      .container2 {
+        width: 500px;
+        height: 500px;
+        background: rgb(22, 22, 137);
+        position: relative;
+      }
+      #el1 {
+        width: 100px;
+        height: 100px;
+        background: rgb(208, 255, 0);
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        z-index: 2;
+      }
+      #el2 {
+        width: 100px;
+        height: 100px;
+        background: rgb(30, 202, 111);
+        position: absolute;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div style="position: sticky; top: 0; right: 0; width: 100%; background-color: red; height: 50px"></div>
+
+      <div id="div1"></div>
+      <div id="div2"></div>
+
+      <div id="div1"></div>
+      <div id="div2"></div>
+      <div id="div3"></div>
+
+      <div id="div1"></div>
+      <div id="div2"></div>
+      <div id="div3"></div>
+    </div>
+
+    <div class="container2">
+      <div id="el1"></div>
+      <div id="el2"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+header nav {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+header .logo {
+  width: 100px;
+  height: 80px;
+}
+
+header ul {
+  display: flex;
+  margin-left: auto;
+}
+
+header ul li {
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+header ul li:first-child {
+  background-color: #df3d4f;
+  color: white;
+}
+.rightHeader {
+  display: flex;
+  flex-direction: row;
+}
+.rightHeader img {
+  border-radius: 3px;
+}
+.rightHeader div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.rightHeader div p {
+  color: gray;
+}
+
+.rightHeader div a {
+  color: black;
+  text-decoration: none;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+section#section1 {
+  background-image: url("./section1Img.jpeg");
+  padding: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+section#section1 img {
+  width: 100%;
+}
+section#section1 h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+section#section1 h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#section1 h1:after {
+  content: " ";
+  display: block;
+  width: 300px;
+  height: 10px;
+  background-color: #df3d4f;
+  margin-top: 30px;
+}
+
+section#section1 h2:after {
+  content: " ";
+  display: block;
+  width: 100px;
+  height: 10px;
+  background-color: #df3d4f;
+  margin-top: 10px;
+}
+
+#section2 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  align-items: center;
+}
+
+#section2 h3 {
+  color: #6ec1e4;
+  font-size: 25px;
+  text-transform: uppercase;
+  width: 20%;
+  text-align: center;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 30px;
+}
+
+#section2 .container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#section2 .container img {
+  flex-grow: 0;
+  width: 172px;
+}
+#section3 {
+  display: flex;
+  justify-content: center;
+}
+#section3 iframe {
+  width: 100%;
+  flex-grow: 0;
+}

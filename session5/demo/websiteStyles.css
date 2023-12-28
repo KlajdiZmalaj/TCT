@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+body * {
+  font-family: "Roboto";
+}
+header {
+  background-color: #f8f6f0;
+  display: flex;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  padding: 0 100px;
+}
+.buttonsWrapper {
+  margin-left: auto;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav img {
+  width: 26px;
+  height: 24px;
+}
+
+.buttonsWrapper button:first-child {
+  background: transparent;
+  border: 0;
+}
+
+.buttonsWrapper button:last-child {
+  background: rgb(226, 98, 89);
+  border: 0;
+  color: white;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 3px;
+}
+
+section#underHeader {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f6f0;
+}
+#underHeader h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+section#underHeader h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  color: rgb(129, 129, 129);
+}
+
+section#underHeader button {
+  margin-top: 30px;
+  background: transparent;
+  border: 0;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+section#underHeader img {
+  width: 60%;
+  margin-top: 100px;
+}
+
+#section2 {
+  background-color: #f8f6f0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+#section2 > h2 {
+  font-size: 40px;
+  text-align: center;
+}
+#section2 > p {
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+  width: 50%;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  margin-top: 90px;
+}
+@media only screen and (max-width: 768px) {
+  .cardsContainer {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.card {
+  display: flex;
+  flex-flow: column;
+  width: calc(100% / 3 - 20px);
+  background-color: rgb(242, 240, 233);
+  padding: 20px;
+}
+.card img {
+  width: 100%;
+  position: relative;
+  /* top: -90px; */
+  margin-top: -90px;
+}
+.card h4 {
+  font-size: 25px;
+  margin-top: 20px;
+}
+.card p {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card button {
+  background-color: transparent;
+  border: 0;
+  text-align: left;
+}
+#section3 {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  padding-top: 60px;
+  background-color: rgb(242, 240, 233);
+}
+
+#section3 .row {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+}
+#section3 .isReversed {
+  flex-flow: row-reverse;
+}
+#section3 .isReversed img {
+  position: relative;
+  right: 50px;
+}
+#section3 .row .left {
+  width: 50%;
+  padding: 0 90px;
+}
+#section3 .row .left h5 {
+  font-size: 35px;
+  line-height: 45px;
+}
+#section3 .row .left p {
+  font-size: 15px;
+  margin-top: 20px;
+  line-height: 25px;
+  color: rgb(66, 66, 66);
+}
+#section3 .row .left button {
+  background-color: rgb(226, 98, 89);
+  color: white;
+  margin-top: 20px;
+  padding: 4px 10px;
+  border-radius: 3px;
+  border: 0;
+}
+#section3 .row img {
+  width: 367px;
+}

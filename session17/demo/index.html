@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="tregoToDo"></p>
+    <script>
+      //
+      //   window.setInterval()
+      //   window.setTimeout()
+      //   window.fetch("url_serverit");
+
+      const merrTeDhenat = async () => {
+        //
+        const thirrja = await window.fetch("https://jsonplaceholder.typicode.com/albums");
+        const teDhenat = await thirrja.json();
+        console.log("thirrja deri tani ka : ", thirrja);
+        console.log("teDhenat jane : ", teDhenat, teDhenat[1]);
+      };
+
+      merrTeDhenat();
+
+      const merrToDoNjeDhjet = async () => {
+        const req = await fetch("https://jsonplaceholder.typicode.com/todos");
+        const toDos = await req.json();
+        const paragrafi = document.getElementById("tregoToDo");
+        const myTodo = toDos[10];
+        // paragrafi.innerText = `Todo-ja nr 1 ka ket id : ${toDos[0].title} dhe todoja 10 ka id : ${toDos[9].id}`;
+        paragrafi.innerText = `Propertis e ToDos nr.11 jane : ${myTodo.id}, ${myTodo.completed} , ${myTodo.title} , ${myTodo.userId}`;
+        //
+      };
+      merrToDoNjeDhjet();
+
+      //   //.then alternative
+      //   const merrToDoNjeDhjet2 = () => {
+      //     fetch("https://jsonplaceholder.typicode.com/todos")
+      //       .then((req) => req.json())
+      //       .then((toDos) => {
+      //         console.log("Te dhenat me .then jane : ", toDos);
+      //       });
+      //   };
+      //   merrToDoNjeDhjet2();
+
+      const getOneToDo = async () => {
+        const req = await fetch("https://jsonplaceholder.typicode.com/todos/10");
+        const toDo = await req.json();
+        console.log("Todoja nr 10 nga backu eshte : ", toDo);
+      };
+      getOneToDo();
+    </script>
+  </body>
+</html>

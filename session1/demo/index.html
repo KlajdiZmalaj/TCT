@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <title>test title</title>
+    <style>
+      th {
+        background-color: green;
+        color: white;
+      }
+
+      td {
+        border: 1px dashed red;
+      }
+
+      a {
+        color: green;
+      }
+      /* ky eshte nje koment */
+      a:nth-child(2) {
+        color: blue;
+      }
+
+      #data4r4c4 {
+        background-color: black;
+        color: red;
+      }
+      .meStilo {
+        background: red;
+        color: aqua;
+      }
+
+      #testPadding {
+        padding: 20px;
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+      }
+      #testMargin {
+        margin: 20px;
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+      }
+      /* tr:nth-child(2) td {
+        background-color: black;
+        color: white;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <!--this is a comment-->
+    <header>
+      <nav>
+        <a href="./nav2.html">nav2</a>
+        <a href="./nav3.html">nav3</a>
+      </nav>
+    </header>
+
+    <div>this is inside div</div>
+    <a href="https://aaada.org.au/">Austrelians</a>
+
+    <ul>
+      <li>lista nr 1</li>
+      <li>lista nr 2</li>
+    </ul>
+
+    <table>
+      <thead>
+        <th>head1</th>
+        <th>head2</th>
+        <th>head3</th>
+        <th>head4</th>
+        <th>head5</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>data1</td>
+          <td class="meStilo">data2</td>
+          <td>data3</td>
+          <td>data4</td>
+          <td>data5</td>
+        </tr>
+        <tr>
+          <td>data1</td>
+          <td>data2</td>
+          <td>data3</td>
+          <td class="meStilo">data4</td>
+          <td>data5</td>
+        </tr>
+        <tr>
+          <td>data1</td>
+          <td>data2</td>
+          <td>data3</td>
+          <td>data4</td>
+          <td>data5</td>
+        </tr>
+        <tr>
+          <td>data1</td>
+          <td>data2</td>
+          <td>data3</td>
+          <td id="data4r4c4">data4</td>
+          <td>data5</td>
+        </tr>
+        <tr>
+          <td>data1</td>
+          <td>data2</td>
+          <td>data3</td>
+          <td>data4</td>
+          <td>data5</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="testPadding"></div>
+    <div id="testMargin"></div>
+  </body>
+</html>

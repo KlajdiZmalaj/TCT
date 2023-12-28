@@ -1,0 +1,88 @@
+<!-- <script>
+  //var
+  const emri = "";
+  let emri2 = 5;
+  var emri3 = true;
+
+  //funx
+  function emri4(params) {
+    return "";
+  }
+  const emri5 = () => "";
+
+  //obj
+  const emri6 = {
+    key: "value",
+    key2: "value for key 2",
+  };
+
+  let nxenesi = {
+    emri: "Klajdi",
+    mbiemri: "Zmalaj",
+    mosha: 24,
+    notat: {
+      matematike: 10,
+      fizike: 5,
+    },
+  };
+
+  console.log("Objekti jone emri6 eshte : ", emri6);
+  console.log(`Nxenesi eshte : ${nxenesi}`);
+  console.log(`Nxenesi eshte : `, nxenesi);
+  console.log(`Nxenesi eshte : `, nxenesi["emri"], nxenesi.mbiemri, " dhe mosha eshte :", nxenesi.mosha);
+
+  const cilen_note = prompt("Ke note desheroni ?");
+
+  console.log("Nota e ", cilen_note, " per nxenesin : ", nxenesi.emri, " eshte : ", nxenesi["notat"][cilen_note]);
+
+  //
+
+  const objektiTest = {
+    prop1: 100,
+    prop3: "klajdi",
+    prop10: true,
+    prop5: {},
+  };
+
+  const vleraNgaUseri = prompt("Cilin propery deshironi ?");
+
+  console.log("Vlera e kerkuar nga propery :", vleraNgaUseri, " eshte : ", objektiTest[vleraNgaUseri]);
+  console.log("Vlera e kerkuar nga propery : prop10 eshte : ", objektiTest.prop10);
+
+  const Obj2 = {
+    prop50: "un jam " + 24 + " vjec",
+    prop500: "sdsdsd",
+  };
+
+  console.log("Prop50 ka brenda : ", Obj2.prop50, Obj2[vleraNgaUseri]);
+</script> -->
+
+<script>
+  let test1 = {
+    prop1: "Vlera per prop1",
+    prop2: "Vlera per prop2",
+  };
+
+  delete test1.prop2;
+  test1 = "ckemi";
+
+  console.log("test1 ka kto vlera", test1);
+  const test2 = {
+    prop3: "Vlera per prop ..",
+    prop4: "Vlera per prop4",
+    prop5: "Vlera per prop5",
+    prop6: "Vlera per prop6",
+  };
+
+  let test3 = {
+    prop5: "Vlera per prop5555555",
+    prop8: "Vlera per prop6",
+  };
+  let test4 = Object.assign({ prop99: "ckemi" }, test1, test2, test3);
+  console.log("test4 ka kto vlera : ", test4);
+
+  console.log("Objekti qe do bej log eshte : ", {
+    prop1: "Vlera per prop1",
+    prop2: "Vlera per prop2",
+  });
+</script>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Ky eshte nje paragraph</p>
+    <script>
+      let gjeresiaEDritares = window.innerWidth;
+      let gjatesiaEDritares = window.innerHeight;
+      //
+      window.console.log("Dritarja eshte : ", gjeresiaEDritares, " x ", gjatesiaEDritares);
+      console.log("Cfare ka window Location  :", window.location);
+      //
+      setTimeout(() => {
+        console.log("Log u aktivizuaa");
+      }, 4000);
+      //
+      const paragrafi = document.getElementsByTagName("p")[0];
+      document.body.append(paragrafi);
+
+      setTimeout(() => {
+        paragrafi.innerText = "Paragrafi u ndryshua";
+      }, 5000);
+
+      let intervaliIm = setInterval(() => {
+        console.log("Ky eshte nje log nga intervalii...");
+      }, 1000);
+
+      //pastron intervalin e ruajtur ne variablin : intervaliIm
+      //   window.clearInterval(intervaliIm);
+      //   window.clearTimeout("....");
+    </script>
+    <script>
+      let paragraphsInterval = setInterval(() => {
+        // const paragrafi = document.createElement("p");
+        // paragrafi.innerHTML = "Paragrafi im";
+        // document.body.append(paragrafi);
+        document.body.innerHTML += `<p>Paragrafi im</p>`;
+      }, 500);
+      //clears the paragraph interval
+      //   clearInterval(paragraphsInterval);
+    </script>
+  </body>
+</html>
