@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <style>
+      .card {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% / 3 - 20px);
+        background-color: #222831;
+        color: white;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .card img {
+        background-color: #dbdbdb;
+        padding: 50px;
+        border-bottom-left-radius: 60px;
+        height: 200px;
+        object-fit: contain;
+      }
+      .card h2 {
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+      }
+      .card p {
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .card > div {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .card > div > span:last-child {
+        background-color: yellow;
+        color: black;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+      }
+      #cardsContainer {
+        display: flex;
+        width: 100vw;
+        flex-flow: row wrap;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="https://themewagon.github.io/feane/images/f2.png" alt="" />
+      <h2>header</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, odit inventore quisquam sequi eum suscipit?</p>
+      <div>
+        <span>$20</span>
+        <span>?</span>
+      </div>
+    </div>
+    <div id="cardsContainer"></div>
+    <script>
+      const merrData = async () => {
+        const thirrje = await fetch("https://api.npoint.io/96cde51098094fdb17c2");
+        const ushqimet = await thirrje.json();
+        const ushqimetArray = ushqimet.foods;
+        console.log("ushqimetArray jane : ", ushqimetArray);
+
+        for (let index = 0; index < ushqimetArray.length; index++) {
+          const kartaEUshqimit = ` <div class="card">
+      <img src="${ushqimetArray[index].image}" alt="" />
+      <h2>${ushqimetArray[index].header}</h2>
+      <p>${ushqimetArray[index].body}</p>
+      <div>
+        <span>$${ushqimetArray[index].price}</span>
+        <span>?</span>
+      </div>
+    </div>`;
+
+          document.getElementById("cardsContainer").innerHTML += kartaEUshqimit;
+        }
+      };
+      merrData();
+    </script>
+  </body>
+</html>
