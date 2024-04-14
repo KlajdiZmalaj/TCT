@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+      .swiper {
+        width: 600px;
+        height: 600px;
+      }
+      .block {
+        width: 500px;
+        height: 500px;
+        background-color: black;
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <p id="myParagraph">Une quhem Klajdi</p>
+
+  <!-- Slider main container -->
+  <div class="swiper" id="mySwiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Go-H8GMEh1cmMNiS_JV5om--MYYmxlsjCa_kZkUJhg&s"
+          alt=""
+        />
+      </div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+      //sintaksa javscript
+      const myP = (document.getElementById("myParagraph").innerHTML = "Test test");
+      document.getElementById("myParagraph").style.color = "blue";
+      document.getElementById("myParagraph").style.fontSize = "blue";
+      //sintaksa jquery $("QUERY_CSS").metoda()
+      $("#myParagraph").html("Test test");
+
+      $("#myParagraph").css({ color: "red", fontSize: "20px" });
+
+      $("#myParagraph").on("click", function () {
+        console.log("une klikova paragafin ", this);
+        $(this).css({ color: "blue" });
+      });
+
+      //fetch ne server me javsacirpt
+      fetch("https://klajdi-tct-backend.000webhostapp.com/")
+        .then((res) => res.json())
+        .then((data) => {
+          console.log("data e marre eshte  fetch: ", data);
+        });
+      // fetch ne server me jsquery
+      $.getJSON("https://klajdi-tct-backend.000webhostapp.com/", (data) => {
+        console.log("data e marre eshte : ", data);
+      });
+
+      //init swiper slider
+      const swiper = new Swiper("#mySwiper", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 500,
+        },
+        effect: "cube",
+        cubeEffect: {
+          slideShadows: false,
+        },
+      });
+    </script>
+  </body>
+</html>

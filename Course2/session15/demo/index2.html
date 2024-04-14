@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      .block {
+        width: 500px;
+        height: 500px;
+        background-color: black;
+        margin-top: 100px;
+      }
+    </style>
+    <style>
+      .panel {
+        display: flex;
+        flex-flow: column;
+        border: 1px solid #222;
+        width: 100%;
+      }
+      .panel-head {
+        height: 40px;
+        width: 100%;
+        border-bottom: 1px solid #222;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .panel-head:hover {
+        background-color: #ccc;
+      }
+      .panel-body {
+        height: 120px;
+        width: 100%;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div data-aos="flip-down" class="block"></div>
+    <div class="block"></div>
+
+    <div class="panel">
+      <div class="panel-head">Panel head</div>
+      <div class="panel-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nostrum maxime earum deleniti cupiditate,
+        hic perspiciatis ut vero? Necessitatibus itaque nihil esse est laudantium ab nisi labore ratione culpa tempora,
+        facere quam quos illum quidem veritatis omnis, debitis eius, quasi inventore. Error architecto nemo nesciunt,
+        hic ad itaque ullam molestiae!
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./jquery.js"></script>
+    <script>
+      var users = [
+        { user: "barney", age: 36, active: true },
+        { user: "fred", age: 40, active: false },
+      ];
+      console.log("users", users);
+    </script>
+    <script>
+      AOS.init();
+      //me jqiury
+      $(".panel-head").on("click", () => {
+        $(".panel-body").toggleClass("hide");
+      });
+      //me javascript
+      document.getElementsByClassName("panel-head")[0].addEventListener("click", () => {
+        if (document.getElementsByClassName("panel-body")[0].classList.contains("hide")) {
+          document.getElementsByClassName("panel-body")[0].classList.remove("hide");
+        } else {
+          document.getElementsByClassName("panel-body")[0].classList.add("hide");
+        }
+      });
+    </script>
+  </body>
+</html>

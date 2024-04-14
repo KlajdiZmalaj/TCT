@@ -1,0 +1,92 @@
+<html>
+  <head></head>
+
+  <style>
+    #blloku1 * {
+      font-size: 30px;
+    }
+    #myParagraph {
+      border: 1px solid red;
+    }
+    .myClass {
+      color: blue;
+      background: black;
+    }
+    .myDiv {
+      color: blue;
+    }
+
+    #blloku1,
+    #blloku2 {
+      width: 100px;
+      height: 40px;
+      background-color: blueviolet;
+      margin: 10px;
+    }
+    #blloku2 {
+      background-color: red;
+    }
+    #blloku1 * {
+      /*stilzon cdo gje brenda blloku1 */
+    }
+    #blloku1 > #blloku4 {
+      /*i pari element qe gjen brenda container (#blloku1) */
+    }
+
+    #blloku4 > .myP2 {
+        /* stilizon te gjith .myP2 qe ndodhen direkt brenda #blloku4 */
+    }
+  </style>
+  <body>
+    <p id="myParagraph">ky eshte nje paragra</p>
+
+    <p class="myClass">Paragraph2</p>
+    <p class="myClass">Paragraph 3</p>
+    <p class="myClass">Paragraph 4</p>
+
+    <div class="myDiv" style="color: red">test test</div>
+
+    <div id="blloku1">
+      <div id="blloku3">
+
+      </div>
+      <div id="blloku4">
+        <p>
+            <p class="myP2"></p>
+        </p>
+        <p></p>
+        <p class="myP2"></p>
+        <p></p>
+      </div>
+    </div>
+    <div id="blloku2" style="background-color: blue"></div>
+
+
+    <style>
+#blloku10 > .style10 {
+    /*stilizon .style10 qe ndodhet direkt brenda #blloku10 > div#style10 */
+}
+    </style>
+
+
+    <div id="blloku10">
+        <div > 
+            <p class="style10">test</p> 
+        </div>
+        <div class="style10"> <p>test</p>  </div>
+        <div> <p>test</p> </div>
+        <div> <p>test</p> </div>
+    </div>
+
+    <style>
+        .divi1  + p {
+            /*stilizon ate paragraf qe ndodhet direkt pas .divi1 */
+        }
+    </style>
+
+
+    <div class="divi1"></div>
+    <p></p>
+
+  </body>
+</html>

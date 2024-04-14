@@ -1,0 +1,393 @@
+{
+  "pizza": [
+    {
+      "id": 1,
+      "name": "pizza tct",
+      "description": "djath, proshutë, salcë",
+      "image": "https://pizzaitalia.al/images/pfast2.min.jpg",
+      "price": " All 100-200 "
+    },
+    {
+      "id": 2,
+      "name": "pizza fast (në kuti)",
+      "description": "djath, proshutë, salcë",
+      "image": "https://pizzaitalia.al/images/fastkuti.min.jpg",
+      "price": " All 220 "
+    },
+    {
+      "id": 3,
+      "name": "pizza margarita",
+      "description": "djath, salcë e përgatitur, borzilok, vaj ulliri",
+      "image": "https://pizzaitalia.al/images/margarita.min.jpg",
+      "price": " All 250-300-500 "
+    },
+    {
+      "id": 4,
+      "name": "pizza proshutë",
+      "description": "djath, proshutë, salcë",
+      "image": "https://pizzaitalia.al/images/proshute.min.jpg",
+      "price": " All 300-350-600 "
+    },
+    {
+      "id": 5,
+      "name": "pizza proshutë pule",
+      "description": "djath, proshutë pule, salcë",
+      "image": "https://pizzaitalia.al/images/proshute.min.jpg",
+      "price": " All 300-350-600 "
+    },
+    {
+      "id": 6,
+      "name": "pizza pancetë+Proshutë",
+      "description": "djath, pancetë, proshutë, salcë",
+      "image": "https://pizzaitalia.al/images/proshute.min.jpg",
+      "price": " All 350-400-650 "
+    },
+    {
+      "id": 7,
+      "name": "pizza proshutë, salçiçe",
+      "description": "djath, proshutë, salcë",
+      "image": "https://pizzaitalia.al/images/proshutesalcice.min.jpg",
+      "price": " All 350-400-650 "
+    },
+    {
+      "id": 8,
+      "name": "pizza me kërpudha",
+      "description": "djath, kërpudha, proshutë, salcë",
+      "image": "https://pizzaitalia.al/images/kerpudha.min.jpg",
+      "price": " All 350-400-650 "
+    },
+    {
+      "id": 9,
+      "name": "pizza kapriçoza",
+      "description": "djath, proshutë, salçiçe, ullinj, domate, speca, salcë",
+      "image": "https://pizzaitalia.al/images/kapricosa2.min.jpg",
+      "price": " All 350-400-650 "
+    },
+    {
+      "id": 10,
+      "name": "pizza me perime",
+      "description": "djath, kërpudha, speca, domate, ullinj, salcë",
+      "image": "https://pizzaitalia.al/images/perime3.min.jpg",
+      "price": " All 350-400-650 "
+    },
+    {
+      "id": 11,
+      "name": "pizza me ton",
+      "description": "djath, tono, salcë",
+      "image": "https://pizzaitalia.al/images/tono.min.jpg",
+      "price": " All 350-400-650 "
+    },
+    {
+      "id": 12,
+      "name": "pizza pikante",
+      "description": "djath, sallam pikant, ullinj, speca, salcë",
+      "image": "https://pizzaitalia.al/images/pikante.jpg",
+      "price": " All 350-400-650 "
+    },
+    {
+      "id": 13,
+      "name": "pizza 4 stinët",
+      "description": "djath, proshutë, kërpudha, tono, ullinj, domate, speca, salcë",
+      "image": "https://pizzaitalia.al/images/4stinet.min.jpg",
+      "price": " All 400-450-800 "
+    },
+    {
+      "id": 14,
+      "name": "pizza 4 djathrat",
+      "description": "guda, mozarella, gorgonzola, grada padana, salcë",
+      "image": "https://pizzaitalia.al/images/4djathrat.min.jpg",
+      "price": " All 400-450-800 "
+    },
+    {
+      "id": 15,
+      "name": "pizza italia",
+      "description": "djath, pancetë, proshutë, kërpudha, ullinj, speca, salçiçe, salcë",
+      "image": "https://pizzaitalia.al/images/pitalia.jpg",
+      "price": " All 500-600-900 "
+    },
+    {
+      "id": 16,
+      "name": "pizza karbunara",
+      "description": "pana, djath, proshutë, pancetë, kërpudha",
+      "image": "https://pizzaitalia.al/images/karbunara.min.jpg",
+      "price": " All 400-450-800 "
+    },
+    {
+      "id": 17,
+      "name": "pizza la crema",
+      "description": "pana, djath, proshutë, sallam pikant, kërpudha",
+      "image": "https://pizzaitalia.al/images/pizza.min.jpg",
+      "price": " All 400-450-800 "
+    },
+    {
+      "id": 18,
+      "name": "pizza American",
+      "description": "salcë, djath, mish, patate",
+      "image": "https://pizzaitalia.al/images/american.min.jpg",
+      "price": " All 400-450-800 "
+    },
+    {
+      "id": 19,
+      "name": "pizza hallall",
+      "description": "djath i bardhë, sunxhuk, salcë, speca, ullinjë",
+      "image": "https://pizzaitalia.al/images/hallall.min.jpg",
+      "price": " All 350-400-650 "
+    },
+    {
+      "id": 20,
+      "name": "pizza tono+Kërpudh",
+      "description": "djath, tono, kërpudha, salcë",
+      "image": "https://pizzaitalia.al/images/4stinet2.min.jpg",
+      "price": " All 400-450-800 "
+    }
+  ],
+  "sandwich": [
+    {
+      "id": 1,
+      "name": "sandwich normal",
+      "description": "djath, proshutë, majonezë, domate, ullinj",
+      "image": "https://pizzaitalia.al/images/sandwich2.min.jpg",
+      "price": " All 120 "
+    },
+    {
+      "id": 2,
+      "name": "sandwich me perime",
+      "description": "djath, kërpudha, speca, majonezë, domate, ullinj",
+      "image": "https://pizzaitalia.al/images/sandwich3.min.jpg",
+      "price": " All 150 "
+    },
+    {
+      "id": 3,
+      "name": "sandwich me tono",
+      "description": "djath, tono, majonezë, domate, ullinj",
+      "image": "https://pizzaitalia.al/images/sandwich2.min.jpg",
+      "price": " All 150 "
+    },
+    {
+      "id": 4,
+      "name": "sandwich me salçiçe",
+      "description": "djath, salçiçe, majonezë, domate, ullinj",
+      "image": "https://pizzaitalia.al/images/sandwich3.min.jpg",
+      "price": " All 150 "
+    },
+    {
+      "id": 5,
+      "name": "sandwich pikant",
+      "description": "djath, salçiçe pikante, majonezë, domate, ullinj",
+      "image": "https://pizzaitalia.al/images/sandwich2.min.jpg",
+      "price": " All 150 "
+    },
+    {
+      "id": 6,
+      "name": "sandwich me fileto pule",
+      "description": "djath, fileto pule, majonezë, domate, ullinj",
+      "image": "https://pizzaitalia.al/images/sandwich3.min.jpg",
+      "price": " All 150 "
+    },
+    {
+      "id": 7,
+      "name": "sandwich me mish të tymosur",
+      "description": "djath, mish i tymosur, majonezë, domate, ullinj",
+      "image": "https://pizzaitalia.al/images/sandwich2.min.jpg",
+      "price": " All 150 "
+    },
+    {
+      "id": 8,
+      "name": "sandwich me kërpudha",
+      "description": "djath, kërpudha, proshutë, majonezë, domate, ullinj",
+      "image": "https://pizzaitalia.al/images/sandwich3.min.jpg",
+      "price": " All 150 "
+    },
+    {
+      "id": 9,
+      "name": "sandwich special 1",
+      "description": "djath, kërpudha, mish i tymosur, majonezë, domate, ullinj",
+      "image": "https://pizzaitalia.al/images/sandwich2.min.jpg",
+      "price": " All 170 "
+    },
+    {
+      "id": 10,
+      "name": "sandwich special",
+      "description": "djath, tono, kërpudha, majonezë, domate, ullinj",
+      "image": "https://pizzaitalia.al/images/sandwich3.min.jpg",
+      "price": " All 170 "
+    },
+    {
+      "id": 11,
+      "name": "sandwich normal integral",
+      "description": "djath, proshutë, majonezë, domate, ullinj",
+      "image": "https://pizzaitalia.al/images/sandwich2.min.jpg",
+      "price": " All 120 "
+    },
+    {
+      "id": 12,
+      "name": "sandwich me perime integral",
+      "description": "djath, kërpudha, speca, majonezë, domate, ullinj",
+      "image": "https://pizzaitalia.al/images/sandwich3.min.jpg",
+      "price": " All 170 "
+    },
+    {
+      "id": 13,
+      "name": "sandwich me tono integral",
+      "description": "djath, tono, majonezë, domate, ullinj",
+      "image": "https://pizzaitalia.al/images/sandwich2.min.jpg",
+      "price": " All 170 "
+    },
+    {
+      "id": 14,
+      "name": "sandwich me kërpudha integral",
+      "description": "djath, kërpudha, proshutë, majonezë, domate, ullinj",
+      "image": "https://pizzaitalia.al/images/sandwich3.min.jpg",
+      "price": " All 170 "
+    },
+    {
+      "id": 15,
+      "name": "sandwich philadelphia integral",
+      "description": "philadelphia, proshutë, moxarela",
+      "image": "https://pizzaitalia.al/images/sandwich2.min.jpg",
+      "price": " All 170 "
+    },
+    {
+      "id": 16,
+      "name": "sandwich 4 djathrat integral",
+      "description": "gorgonzola, grana padan, moxarela, gruda, proshutë",
+      "image": "https://pizzaitalia.al/images/sandwich3.min.jpg",
+      "price": " All 170 "
+    },
+    {
+      "id": 17,
+      "name": "sandwich hallall",
+      "description": "djath, sunxhuk, majonezë, domate, ullinj",
+      "image": "https://pizzaitalia.al/images/sandwich2.min.jpg",
+      "price": " All 170 "
+    },
+    {
+      "id": 18,
+      "name": "brusketa",
+      "description": "sallam pikant, gjalp, djath, patate, domate, speca, ullinj, djath i bardhë",
+      "image": "https://pizzaitalia.al/images/brusketa.jpg",
+      "price": " All 250 "
+    },
+    {
+      "id": 19,
+      "name": "brusketa speciale",
+      "description": "gjalp, djath, pancetë, salçiçe, kërpudha, patate, domate, speca, ullinj, djath i bardhë",
+      "image": "https://pizzaitalia.al/images/brusketa.jpg",
+      "price": " All 350 "
+    }
+  ],
+  "sufllaqe": [
+    {
+      "id": 1,
+      "name": "sufllaqe gici",
+      "description": "mish, xaxiq, qep, domate, patate, salca",
+      "image": "https://pizzaitalia.al/images/sufllaqe.min.jpg",
+      "price": " All 170 "
+    },
+    {
+      "id": 2,
+      "name": "sufllaqe pule",
+      "description": "mish, sos, sallatë jeshile, domate, patate, salca",
+      "image": "https://pizzaitalia.al/images/sufllaqe3.min.jpg",
+      "price": " All 170 "
+    },
+    {
+      "id": 3,
+      "name": "sufllaqe xhep gici",
+      "description": "mish, xaxiq, qep, domate, patate, salca",
+      "image": "https://pizzaitalia.al/images/sufllaqee.min.jpg",
+      "price": " All 170 "
+    },
+    {
+      "id": 4,
+      "name": "sufllaqe xhep pule",
+      "description": "mish, sos, sallatë jeshile, domate, patate, salca",
+      "image": "https://pizzaitalia.al/images/sufllaqee.min.jpg",
+      "price": " All 170 "
+    },
+    {
+      "id": 5,
+      "name": "doner gici",
+      "description": "mish,sos, domate, patate, salca",
+      "image": "https://pizzaitalia.al/images/racion.min.jpg",
+      "price": " All 170 "
+    },
+    {
+      "id": 6,
+      "name": "doner pule",
+      "description": "mish, sos, domate, patate, salca",
+      "image": "https://pizzaitalia.al/images/racion.min.jpg",
+      "price": " All 170 "
+    },
+    {
+      "id": 7,
+      "name": "sufllaqe hapur gici",
+      "description": "mish, qep, domate, patate, pite, salca",
+      "image": "https://pizzaitalia.al/images/sufhapur.min.jpg",
+      "price": " All 300 "
+    },
+    {
+      "id": 8,
+      "name": "skepasti gici",
+      "description": "mish, sos, qep, domate, patate, djath guda",
+      "image": "https://pizzaitalia.al/images/skepasti.min.jpg",
+      "price": " All 300-600 "
+    },
+    {
+      "id": 9,
+      "name": "skepasti pule",
+      "description": "mish, sos, sallatë jeshile, domate, patate, salca",
+      "image": "https://pizzaitalia.al/images/skepasti.min.jpg",
+      "price": " All 300-600 "
+    },
+    {
+      "id": 10,
+      "name": "racion shishqebap pule",
+      "description": "mish, sos, sallatë jeshile, domate, patate, salca",
+      "image": "https://pizzaitalia.al/images/racion.min.jpg",
+      "price": " All 300 "
+    },
+    {
+      "id": 11,
+      "name": "shishqebap pule 1Cop",
+      "description": "shishqebap pule 1Cop",
+      "image": "https://pizzaitalia.al/images/racion.min.jpg",
+      "price": " All 100 "
+    },
+    {
+      "id": 12,
+      "name": "racion mishi",
+      "description": "racion mishi",
+      "image": "https://pizzaitalia.al/images/racion.min.jpg",
+      "price": " All 400 "
+    },
+    {
+      "id": 13,
+      "name": "racion xaxiqi",
+      "description": "racion xaxiqi",
+      "image": "https://pizzaitalia.al/images/racion.min.jpg",
+      "price": " All 150 "
+    },
+    {
+      "id": 14,
+      "name": "racion patate",
+      "description": "racion patate",
+      "image": "https://pizzaitalia.al/images/racion.min.jpg",
+      "price": " All 150 "
+    },
+    {
+      "id": 15,
+      "name": "racion fileto krokante",
+      "description": "racion fileto krokante",
+      "image": "https://pizzaitalia.al/images/krakante.min.jpg",
+      "price": " All 300 "
+    },
+    {
+      "id": 16,
+      "name": "racion krahë",
+      "description": "racion krahë",
+      "image": "https://pizzaitalia.al/images/racion.min.jpg",
+      "price": " All 250 "
+    }
+  ]
+}

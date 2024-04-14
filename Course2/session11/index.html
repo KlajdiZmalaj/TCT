@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <p>Logo</p>
+      <button id="buttonHeader"><i class="fa fa-bars" aria-hidden="true"></i></button>
+      <div id="menu">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+        </ul>
+      </div>
+    </header>
+    <section class="cardSection"></section>
+    <script>
+      const btnHeader = document.getElementById("buttonHeader");
+      const menuLeft = document.getElementById("menu");
+      btnHeader.addEventListener("click", () => {
+        menuLeft.classList.add("makeItVisible");
+      });
+      const buket = [
+        {
+          img: "https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/33b4149aa2ba568da6fc4ccd/f45e987f-fe2f-640e-7a20-2efcdec618cb.jpg",
+          emri: "BAGUETTE",
+          desc: "Small-batch sourdough baguette.",
+          cmimi: 4.5,
+        },
+        {
+          img: "https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/0cd587018da1567ca82ec0a8/rr.jpg",
+          emri: "FARMING BREAD",
+          desc: "Sample text. Click to select the Text Element.",
+          cmimi: 4.5,
+        },
+        {
+          img: "https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/fa992363623553128956b054/hh.jpg",
+          emri: "MIXED GRAIN",
+          desc: "Sample text. Click to select the Text Element.",
+          cmimi: 4.5,
+        },
+      ];
+      const buketMapped = buket.map((secilaBuk) => {
+        return ` <div class="cardContainer">
+        <img
+          src="${secilaBuk.img}"
+          alt=""
+        />
+        <div class="name">${secilaBuk.emri}</div>
+        <div class="desc">${secilaBuk.desc}</div>
+        <div class="cmimi">$${secilaBuk.cmimi}</div>
+      </div>`;
+      });
+      console.log("buket jane : ", buket, buketMapped);
+      const cardsContainer = document.querySelector(".cardSection");
+      buketMapped.forEach((item) => {
+        cardsContainer.innerHTML += item;
+      });
+    </script>
+  </body>
+</html>

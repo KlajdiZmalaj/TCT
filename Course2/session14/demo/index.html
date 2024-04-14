@@ -1,0 +1,55 @@
+<html lang="en">
+  <head> </head>
+  <body>
+    <script>
+      fetch("https://jsonplaceholder.typicode.com/users")
+        .then((req) => req.json())
+        .then((res) => {
+          //res got as json
+          console.log("res", res);
+        });
+      const getData = async () => {
+        const res = await fetch("https://jsonplaceholder.typicode.com/users");
+        const data = await res.json();
+
+        console.log("data ne async", data);
+      };
+      const addUser = async () => {
+        const res = await fetch("https://jsonplaceholder.typicode.com/users", {
+          method: "POST",
+
+          body: JSON.stringify({
+            name: "Andi",
+            phone: 23434,
+            website: "adad.com",
+            username: "test1",
+          }),
+        });
+      };
+      const updatedUser = async (idGot, nameGot) => {
+        const res = await fetch("https://jsonplaceholder.typicode.com/users", {
+          method: "PUT",
+
+          body: JSON.stringify({
+            id: idGot,
+            name: nameGot,
+          }),
+        });
+      };
+      const deleteUser = async (idGot) => {
+        const res = await fetch("https://jsonplaceholder.typicode.com/users", {
+          method: "DELETE",
+          body: JSON.stringify({
+            id: idGot,
+          }),
+          headers: {
+            Authorazation:
+              "Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+          },
+        });
+        const data = await res.json();
+        console.log("created user : ", data);
+      };
+    </script>
+  </body>
+</html>

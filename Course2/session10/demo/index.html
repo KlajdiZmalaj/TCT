@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <style>
+      .container {
+        width: 300px;
+        height: 300px;
+        background-color: aquamarine;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .container button {
+        margin-top: 10px;
+        background-color: blueviolet;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <p style="color: red;">test</p> -->
+    <!-- <p onmouseenter="handleClickParagraph()" onclick="handleClickParagraph()">test</p> -->
+    <p id="paragrafi1">test</p>
+
+    <h1 class="myHeading">kye shste nje heading</h1>
+
+    <div class="container">
+      <button>buttoni nr 1</button>
+      <button>buttoni nr 2</button>
+      <button>buttoni nr 3</button>
+    </div>
+
+    <input id="myInp" type="text" />
+
+    <label for="myInp2">Mosha:</label>
+    <input id="myInp2" min="0" type="number" placeholder="Vendos i moshen ketu..." />
+
+    <!-- <input type="date" /> -->
+
+    <script>
+      const paragraphVar = document.getElementById("paragrafi1");
+
+      function handleClickParagraph() {
+        console.log("log1");
+        console.log("log2");
+      }
+      paragraphVar.addEventListener("click", handleClickParagraph);
+
+      const headingVar = document.querySelector(".myHeading");
+      headingVar.addEventListener("mouseenter", () => {
+        console.log("un vendosa mousin siper headerit");
+      });
+      //
+      const btn1 = document.querySelector(".container button:first-child");
+      const btn2 = document.querySelector(".container button:nth-child(2)");
+      const btn3 = document.querySelector(".container button:last-child");
+      const containerVar = document.querySelector(".container");
+
+      btn1.addEventListener("click", () => {
+        containerVar.style.backgroundColor = "black";
+        btn1.innerHTML = " un klikova butonin";
+      });
+
+      console.log("buttonat ne variabla jane:", btn1, btn2, btn3);
+
+      const inputvar = document.getElementById("myInp");
+      let inputValue = "";
+      inputvar.addEventListener("input", () => {
+        inputValue = inputvar.value;
+      });
+
+      const inputvarMosha = document.getElementById("myInp2");
+      inputvarMosha.addEventListener("input", () => {
+        console.log("mosha e shenuar eshte: ", inputvarMosha.value);
+      });
+    </script>
+  </body>
+</html>

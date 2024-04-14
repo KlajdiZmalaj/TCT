@@ -1,0 +1,7 @@
+//deklarojme Mixin tone
+@mixin gjeneroBorderDhePadding($paddingGot) {
+  border: 1px solid #222;
+  padding: $paddingGot;
+  padding-bottom: 10px;
+  font-family: $fonti1;
+}

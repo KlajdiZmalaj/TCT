@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("ky eshte nje log");
+      //alert("ky eshte nje alert");
+      //   console.log("ky eshte nje log tjt");
+      //   prompt("merr te dhena nga user : ");
+
+      let var4;
+      var variabli_im = "un quhem klajdi";
+
+      let var2 = 5;
+      const var3 = 10.4;
+      const shumaENumrave = var2 + var3;
+
+      const varBoolean = true;
+      const varBoolean2 = false;
+
+      const varObj = {};
+      const varObj2 = [];
+      const varFunc = () => {};
+
+      let variabliNumer = 10;
+      //   variabliNumer--;
+      variabliNumer = variabliNumer + 5;
+      variabliNumer += 5;
+
+      console.log("Shuma e var2 dhe var3 eshte : ", shumaENumrave);
+      console.log("var 4 eshte : ", var4);
+      console.log("variablat jane : ", variabli_im, var2, var3);
+      // + - / * ** %
+
+      const var10 = "aadad";
+      const var11 = 20;
+
+      console.log("Rezultati i == esjte : ", var10 == var11, var10 === var11);
+      console.log("Rez i karhasimit eshte :", var10 != var11);
+
+      let merrTeDhena = prompt("Fusni vleren nga inputi");
+      console.log("Vlera nga prompt eshte : ", merrTeDhena);
+      console.log("Madhesia e var emri eshte : ", variabli_im.length);
+      console.log("Fjalia e ndryshuar eshte : ", variabli_im.replaceAll("klajdi", "Un"));
+      console.log("Fjale e perseritur : ", "klajdi".repeat(20));
+      console.log("Fjalia e prere eshte : ", variabli_im.slice(9, 15));
+      const varNr = 10;
+
+      //konverto nga Number ne String
+      console.log("kthe ne string : ", 10, varNr.toString(), varNr.toFixed(4));
+
+      //Konverto nga string ne Number
+      //menyra1 , menyra2
+      console.log(Number("10"), +"10");
+
+      //Konverto ne Boolean
+
+      console.log(Boolean("adada"), Boolean(1), Boolean(false), !!"adada");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Italia Fier</title>
+    <link rel="shortcut icon" type="images/png" href="https://pizzaitalia.al/images/p.min.png" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="./Pizza Italia_files/all.min.css" />
+    <link rel="stylesheet" href="./Pizza Italia_files/font-awesome.min.css" />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./Pizza Italia_files/style.css" />
+  </head>
+  <body>
+    <section class="popular" id="popular">
+      <h1 class="heading"><span>menu</span></h1>
+
+      <!-- Control buttons -->
+      <ul class="menu">
+        <li class="btn button" id="pizza">
+          <a>Pizza</a>
+        </li>
+        <li class="btn button" id="sandwich">
+          <a>Sandwich</a>
+        </li>
+        <li class="btn button active" id="sufllaqe">
+          <a>Sufllaqe</a>
+        </li>
+      </ul>
+
+      <div class="box-container">
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 100-200 </span>
+            <img src="./Pizza Italia_files/pfast2.min.jpg" alt="" />
+            <h3>pizza fast</h3>
+            <p>djath, proshutë, salcë</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 220 </span>
+            <img src="./Pizza Italia_files/fastkuti.min.jpg" alt="" />
+            <h3>pizza fast (në kuti)</h3>
+            <p>djath, proshutë, salcë</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 250-300-500 </span>
+            <img src="./Pizza Italia_files/margarita.min.jpg" alt="" />
+            <h3>pizza margarita</h3>
+            <p>djath, salcë e përgatitur, borzilok, vaj ulliri</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 300-350-600 </span>
+            <img src="./Pizza Italia_files/proshute.min.jpg" alt="" />
+            <h3>pizza proshutë</h3>
+            <p>djath, proshutë, salcë</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 300-350-600 </span>
+            <img src="./Pizza Italia_files/proshute.min.jpg" alt="" />
+            <h3>pizza proshutë pule</h3>
+            <p>djath, proshutë pule, salcë</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 350-400-650 </span>
+            <img src="./Pizza Italia_files/proshute.min.jpg" alt="" />
+            <h3>pizza pancetë+Proshutë</h3>
+            <p>djath, pancetë, proshutë, salcë</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 350-400-650 </span>
+            <img src="./Pizza Italia_files/proshutesalcice.min.jpg" alt="" />
+            <h3>pizza proshutë, salçiçe</h3>
+            <p>djath, proshutë, salcë</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 350-400-650 </span>
+            <img src="./Pizza Italia_files/kerpudha.min.jpg" alt="" />
+            <h3>pizza me kërpudha</h3>
+            <p>djath, kërpudha, proshutë, salcë</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 350-400-650 </span>
+            <img src="./Pizza Italia_files/kapricosa2.min.jpg" alt="" />
+            <h3>pizza kapriçoza</h3>
+            <p>djath, proshutë, salçiçe, ullinj, domate, speca, salcë</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 350-400-650 </span>
+            <img src="./Pizza Italia_files/perime3.min.jpg" alt="" />
+            <h3>pizza me perime</h3>
+            <p>djath, kërpudha, speca, domate, ullinj, salcë</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 350-400-650 </span>
+            <img src="./Pizza Italia_files/tono.min.jpg" alt="" />
+            <h3>pizza me ton</h3>
+            <p>djath, tono, salcë</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 350-400-650 </span>
+            <img src="./Pizza Italia_files/pikante.jpg" alt="" />
+            <h3>pizza pikante</h3>
+            <p>djath, sallam pikant, ullinj, speca, salcë</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 400-450-800 </span>
+            <img src="./Pizza Italia_files/4stinet.min.jpg" alt="" />
+            <h3>pizza 4 stinët</h3>
+            <p>
+              djath, proshutë, kërpudha, tono, ullinj,<br />
+              domate, speca, salcë
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 400-450-800 </span>
+            <img src="./Pizza Italia_files/4djathrat.min.jpg" alt="" />
+            <h3>pizza 4 djathrat</h3>
+            <p>
+              guda, mozarella, gorgonzola, grada padana,<br />
+              salcë
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 500-600-900 </span>
+            <img src="./Pizza Italia_files/pitalia.jpg" alt="" />
+            <h3>pizza italia</h3>
+            <p>
+              djath, pancetë, proshutë, kërpudha, ullinj,<br />
+              speca, salçiçe, salcë
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 400-450-800 </span>
+            <img src="./Pizza Italia_files/karbunara.min.jpg" alt="" />
+            <h3>pizza karbunara</h3>
+            <p>pana, djath, proshutë, pancetë, kërpudha</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 400-450-800 </span>
+            <img src="./Pizza Italia_files/pizza.min.jpg" alt="" />
+            <h3>pizza la crema</h3>
+            <p>pana, djath, proshutë, sallam pikant, kërpudha</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 400-450-800 </span>
+            <img src="./Pizza Italia_files/american.min.jpg" alt="" />
+            <h3>pizza American</h3>
+            <p>salcë, djath, mish, patate</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 350-400-650 </span>
+            <img src="./Pizza Italia_files/hallall.min.jpg" alt="" />
+            <h3>pizza hallall</h3>
+            <p>djath i bardhë, sunxhuk, salcë, speca, ullinjë</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv pizza" style="display: none">
+          <div class="box">
+            <span class="price"> All 400-450-800 </span>
+            <img src="./Pizza Italia_files/4stinet2.min.jpg" alt="" />
+            <h3>pizza tono+Kërpudh</h3>
+            <p>djath, tono, kërpudha, salcë</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 120 </span>
+            <img src="./Pizza Italia_files/sandwich2.min.jpg" alt="" />
+            <h3>sandwich normal</h3>
+            <p>djath, proshutë, majonezë, domate, ullinj</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 150 </span>
+            <img src="./Pizza Italia_files/sandwich3.min.jpg" alt="" />
+            <h3>sandwich me perime</h3>
+            <p>djath, kërpudha, speca, majonezë, domate, ullinj</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 150 </span>
+            <img src="./Pizza Italia_files/sandwich2.min.jpg" alt="" />
+            <h3>sandwich me tono</h3>
+            <p>djath, tono, majonezë, domate, ullinj</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 150 </span>
+            <img src="./Pizza Italia_files/sandwich3.min.jpg" alt="" />
+            <h3>sandwich me salçiçe</h3>
+            <p>djath, salçiçe, majonezë, domate, ullinj</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 150 </span>
+            <img src="./Pizza Italia_files/sandwich2.min.jpg" alt="" />
+            <h3>sandwich pikant</h3>
+            <p>djath, salçiçe pikante, majonezë, domate, ullinj</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 150 </span>
+            <img src="./Pizza Italia_files/sandwich3.min.jpg" alt="" />
+            <h3>sandwich me fileto pule</h3>
+            <p>djath, fileto pule, majonezë, domate, ullinj</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 150 </span>
+            <img src="./Pizza Italia_files/sandwich2.min.jpg" alt="" />
+            <h3>sandwich me mish të tymosur</h3>
+            <p>
+              djath, mish i tymosur, majonezë,<br />
+              domate, ullinj
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 150 </span>
+            <img src="./Pizza Italia_files/sandwich3.min.jpg" alt="" />
+            <h3>sandwich me kërpudha</h3>
+            <p>
+              djath, kërpudha, proshutë, majonezë,<br />
+              domate, ullinj
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 170 </span>
+            <img src="./Pizza Italia_files/sandwich2.min.jpg" alt="" />
+            <h3>sandwich special 1</h3>
+            <p>
+              djath, kërpudha, mish i tymosur, majonezë,<br />
+              domate, ullinj
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 170 </span>
+            <img src="./Pizza Italia_files/sandwich3.min.jpg" alt="" />
+            <h3>sandwich special</h3>
+            <p>
+              djath, tono, kërpudha, majonezë,<br />
+              domate, ullinj
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 120 </span>
+            <img src="./Pizza Italia_files/sandwich2.min.jpg" alt="" />
+            <h3>sandwich normal integral</h3>
+            <p>
+              djath, proshutë, majonezë,<br />
+              domate, ullinj
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 170 </span>
+            <img src="./Pizza Italia_files/sandwich3.min.jpg" alt="" />
+            <h3>sandwich me perime integral</h3>
+            <p>
+              djath, kërpudha, speca, majonezë,<br />
+              domate, ullinj
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 170 </span>
+            <img src="./Pizza Italia_files/sandwich2.min.jpg" alt="" />
+            <h3>sandwich me tono integral</h3>
+            <p>
+              djath, tono, majonezë,<br />
+              domate, ullinj
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 170 </span>
+            <img src="./Pizza Italia_files/sandwich3.min.jpg" alt="" />
+            <h3>sandwich me kërpudha integral</h3>
+            <p>
+              djath, kërpudha, proshutë,<br />
+              majonezë, domate, ullinj
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 170 </span>
+            <img src="./Pizza Italia_files/sandwich2.min.jpg" alt="" />
+            <h3>sandwich philadelphia integral</h3>
+            <p>
+              philadelphia, proshutë,<br />
+              moxarela
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 170 </span>
+            <img src="./Pizza Italia_files/sandwich3.min.jpg" alt="" />
+            <h3>sandwich 4 djathrat integral</h3>
+            <p>
+              gorgonzola, grana padan,<br />
+              moxarela, gruda, proshutë
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 170 </span>
+            <img src="./Pizza Italia_files/sandwich2.min.jpg" alt="" />
+            <h3>sandwich hallall</h3>
+            <p>
+              djath, sunxhuk, majonezë,<br />
+              domate, ullinj
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 250 </span>
+            <img src="./Pizza Italia_files/brusketa.jpg" alt="" />
+            <h3>brusketa</h3>
+            <p>
+              sallam pikant, gjalp, djath, patate, domate, speca,<br />
+              ullinj, djath i bardhë
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sandwich" style="display: none">
+          <div class="box">
+            <span class="price"> All 350 </span>
+            <img src="./Pizza Italia_files/brusketa.jpg" alt="" />
+            <h3>brusketa speciale</h3>
+            <p>
+              gjalp, djath, pancetë, salçiçe, kërpudha, patate,<br />
+              domate, speca, ullinj, djath i bardhë
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sufllaqe" style="">
+          <div class="box">
+            <span class="price"> All 170 </span>
+            <img src="./Pizza Italia_files/sufllaqe.min.jpg" alt="" />
+            <h3>sufllaqe gici</h3>
+            <p>mish, xaxiq, qep, domate, patate, salca</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sufllaqe" style="">
+          <div class="box">
+            <span class="price"> All 170 </span>
+            <img src="./Pizza Italia_files/sufllaqe3.min.jpg" alt="" />
+            <h3>sufllaqe pule</h3>
+            <p>mish, sos, sallatë jeshile, domate, patate, salca</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sufllaqe" style="">
+          <div class="box">
+            <span class="price"> All 170 </span>
+            <img src="./Pizza Italia_files/sufllaqee.min.jpg" alt="" />
+            <h3>sufllaqe xhep gici</h3>
+            <p>mish, xaxiq, qep, domate, patate, salca</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sufllaqe" style="">
+          <div class="box">
+            <span class="price"> All 170 </span>
+            <img src="./Pizza Italia_files/sufllaqee.min.jpg" alt="" />
+            <h3>sufllaqe xhep pule</h3>
+            <p>mish, sos, sallatë jeshile, domate, patate, salca</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sufllaqe" style="">
+          <div class="box">
+            <span class="price"> All 170 </span>
+            <img src="./Pizza Italia_files/racion.min.jpg" alt="" />
+            <h3>doner gici</h3>
+            <p>mish,sos, domate, patate, salca</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sufllaqe" style="">
+          <div class="box">
+            <span class="price"> All 170 </span>
+            <img src="./Pizza Italia_files/racion.min.jpg" alt="" />
+            <h3>doner pule</h3>
+            <p>mish, sos, domate, patate, salca</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sufllaqe" style="">
+          <div class="box">
+            <span class="price"> All 300 </span>
+            <img src="./Pizza Italia_files/sufhapur.min.jpg" alt="" />
+            <h3>sufllaqe hapur gici</h3>
+            <p>mish, qep, domate, patate, pite, salca</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sufllaqe" style="">
+          <div class="box">
+            <span class="price"> All 300-600 </span>
+            <img src="./Pizza Italia_files/skepasti.min.jpg" alt="" />
+            <h3>skepasti gici</h3>
+            <p>mish, sos, qep, domate, patate, djath guda</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sufllaqe" style="">
+          <div class="box">
+            <span class="price"> All 300-600 </span>
+            <img src="./Pizza Italia_files/skepasti.min.jpg" alt="" />
+            <h3>skepasti pule</h3>
+            <p>mish, sos, sallatë jeshile, domate, patate, salca</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sufllaqe" style="">
+          <div class="box">
+            <span class="price"> All 300 </span>
+            <img src="./Pizza Italia_files/racion.min.jpg" alt="" />
+            <h3>racion shishqebap pule</h3>
+            <p>mish, sos, sallatë jeshile, domate, patate, salca</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sufllaqe" style="">
+          <div class="box">
+            <span class="price"> All 100 </span>
+            <img src="./Pizza Italia_files/racion.min.jpg" alt="" />
+            <h3>shishqebap pule 1Cop</h3>
+            <p>shishqebap pule 1Cop</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sufllaqe" style="">
+          <div class="box">
+            <span class="price"> All 400 </span>
+            <img src="./Pizza Italia_files/racion.min.jpg" alt="" />
+            <h3>racion mishi</h3>
+            <p>racion mishi</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sufllaqe" style="">
+          <div class="box">
+            <span class="price"> All 150 </span>
+            <img src="./Pizza Italia_files/racion.min.jpg" alt="" />
+            <h3>racion xaxiqi</h3>
+            <p>racion xaxiqi</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sufllaqe" style="">
+          <div class="box">
+            <span class="price"> All 150 </span>
+            <img src="./Pizza Italia_files/racion.min.jpg" alt="" />
+            <h3>racion patate</h3>
+            <p>racion patate</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sufllaqe" style="">
+          <div class="box">
+            <span class="price"> All 300 </span>
+            <img src="./Pizza Italia_files/krakante.min.jpg" alt="" />
+            <h3>racion fileto krokante</h3>
+            <p>racion fileto krokante</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv sufllaqe" style="">
+          <div class="box">
+            <span class="price"> All 250 </span>
+            <img src="./Pizza Italia_files/racion.min.jpg" alt="" />
+            <h3>racion krahë</h3>
+            <p>racion krahë</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="loadmore">
+        <a id="LoadMore" style="display: none">Load More</a>
+      </div>
+    </section>
+
+    <!-- loader  -->
+    <div class="loader-container fade-out">
+      <img src="./Pizza Italia_files/loader.gif" alt="" />
+    </div>
+
+    <!-- custom js file link  -->
+    <script src="./Pizza Italia_files/jquery-3.6.0.min.js"></script>
+    <!--Floating WhatsApp css-->
+    <link rel="stylesheet" href="./Pizza Italia_files/floating-wpp.min.css" />
+    <!--Floating WhatsApp javascript-->
+    <script type="text/javascript" src="./Pizza Italia_files/floating-wpp.min.js"></script>
+    <script src="./Pizza Italia_files/script.js"></script>
+  </body>
+</html>

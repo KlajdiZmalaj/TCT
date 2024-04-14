@@ -1,0 +1,26 @@
+<html lang="en">
+  <head> </head>
+  <style>
+    .el {
+      background-color: red;
+    }
+  </style>
+  <body>
+    <div id="test"></div>
+    <script>
+      const elementiIm = document.createElement("p");
+      //   elementiIm.innerText = "hellooo";
+      elementiIm.id = "idelementi";
+      elementiIm.innerHTML = " <span> test </span> ";
+
+      console.log("cfare ka elemnti im ? ", elementiIm);
+
+      const elementiDiv = document.createElement("div");
+      elementiDiv.innerHTML = "<p>paragrafi1</p><p>paragrafi2</p>";
+      //   elementiDiv.style = "color:red";
+      elementiDiv.style.color = "red";
+      elementiDiv.style.backgroundColor = "red";
+      console.log("elementiDiv ka : ", elementiDiv);
+    </script>
+  </body>
+</html>

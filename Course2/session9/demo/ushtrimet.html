@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <p></p>
+      <h4></h4>
+    </div>
+
+    <script>
+      var containerDiv = document.getElementById("container");
+      var paragrafiBrenda = document.getElementsByTagName("p")[0];
+      //   var paragrafiBrenda = containerDiv.firstChild;
+      var emriIm = prompt("Vendos Emrin");
+
+      paragrafiBrenda.innerText = `une quhem ${emriIm}`;
+
+      var h4Ruajtur = document.querySelector("#container > h4");
+      h4Ruajtur.innerText = "test test test";
+      h4Ruajtur.style.color = "#6f6";
+
+      console.log("variablat jane : ", containerDiv, paragrafiBrenda);
+    </script>
+  </body>
+</html>

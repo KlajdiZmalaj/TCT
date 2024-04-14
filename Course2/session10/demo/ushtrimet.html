@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="text">JavaScript Exercise</p>
+    <button id="button" onclick="makeFontSize20()">Style Paragraph</button>
+    <button id="button2" onclick="addFontSizePlus1()">Style Paragraph</button>
+
+    <br />
+
+    <table id="myTable">
+      <thead>
+        <tr>
+          <th>head1</th>
+          <th>head2</th>
+          <th>head3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="button3">Shto rrjesht</button>
+    <br />
+    <br />
+    <br />
+    <input id="inp1" placeholder="Vendosi nr e rrjeshtit" type="number" />
+    <input id="inp2" placeholder="Vendosi nr e kolones" type="number" />
+    <input id="inp3" placeholder="Vendosi vleren e kolones" type="text" />
+    <button id="submitValue">Ndrysho qelizen</button>
+    <script>
+      //ush1
+      const paragraphVar = document.getElementById("text");
+      function makeFontSize20() {
+        paragraphVar.style.fontSize = "20px";
+      }
+      function addFontSizePlus1() {
+        //marr font sizen e ccss : 20px
+        const fontSizeString = paragraphVar.style.fontSize;
+        //konvertoj 20px ne 20 si number
+        const fontSizeNumber = +fontSizeString.split("px")[0];
+        // mbledh 20 + 1 + px = 21px
+        paragraphVar.style.fontSize = fontSizeNumber + 1 + "px";
+      }
+
+      //ush 2
+      const tbody = document.querySelector("#myTable tbody");
+      const btn3 = document.getElementById("button3");
+      btn3.addEventListener("click", () => {
+        tbody.innerHTML += `
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        `;
+      });
+      const btnEdit = document.getElementById("submitValue");
+      btnEdit.addEventListener("click", () => {
+        const inp1Table = document.getElementById("inp1").value;
+        const inp2Table = document.getElementById("inp2").value;
+        const inp3Table = document.getElementById("inp3").value;
+
+        const dynamicCol = document.querySelector(`table tbody tr:nth-child(${inp1Table}) td:nth-child(${inp2Table})`);
+        if (!dynamicCol) {
+          alert("Colona nuk u gjet");
+        }
+        dynamicCol.innerHTML = inp3Table;
+        // console.log("vlerat e inputeve :", inp1Table, inp2Table, inp3Table, dynamicCol);
+      });
+    </script>
+  </body>
+  inp1
+</html>

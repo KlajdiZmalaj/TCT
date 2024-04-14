@@ -1,0 +1,59 @@
+@use "reset";
+@import "vars";
+@import "mixins"; //ndrsyhi i variablit nga Helvetica ne monserrat
+// $fonti1: "monserrat";
+p {
+  color: $ngjyraBlue;
+  border-bottom: 1px solid #222;
+  font-family: $fonti1;
+}
+//nesting feature
+nav {
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    background-color: black;
+    width: 100px;
+    height: 50px;
+  }
+  ul {
+    li {
+      color: $ngjyraBlue;
+      font-weight: bold;
+      &:after {
+        content: " + =";
+      }
+    }
+  }
+  > div {
+    //div i pare brenda nav
+  }
+}
+
+section#section1 {
+  //therrasim mixin tone me argument 20px
+  @include gjeneroBorderDhePadding(20px);
+}
+
+body > div {
+  //therrasim mixin tone per here te 2 kme argument 30px
+  @include gjeneroBorderDhePadding(30px);
+  margin-top: 20px;
+}
+
+@mixin gjeneroBackground($isDarkMode) {
+  //operatori If else per kushtet
+  @if $isDarkMode {
+    background-color: darkolivegreen;
+  } @else {
+    background-color: rgb(189, 235, 109);
+  }
+}
+
+#divi2 {
+  @include gjeneroBackground(true);
+}
+
+#divi3 {
+  @include gjeneroBackground(false);
+}

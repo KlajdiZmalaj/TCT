@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //deklarimi
+      class KlasaIme {
+        constructor(p1, p2, p3) {
+          this.emri = p1;
+          this.mbiemri = p2;
+          console.log("Params jane : ", p1, p2, p3);
+        }
+
+        metodaIme() {
+          console.log("Benda metodaIme");
+        }
+
+        metodaNr2() {}
+
+        tregoAlertin() {
+          alert("Hello from metoda e 3");
+        }
+      }
+
+      //therritja
+      let KlasaImeVar = new KlasaIme("klajdi", "zmalaj", 24);
+
+      // const myFunc = (p1,p2,p3)=>{}
+      // myFunc('vlera1',2,3)
+
+      class Studenti {
+        constructor() {
+          this.emerStudenti = "Andi";
+          this.notatEStudentit = [6, 9, 10, 9];
+          //
+        }
+        llogaritMesataren() {
+          let shuma = 0;
+          for (let i = 0; i < this.notatEStudentit.length; i++) {
+            shuma += this.notatEStudentit[i];
+          }
+          const mesatarjaENotave = shuma / this.notatEStudentit.length;
+          console.log("Shuma eshte : ", shuma, mesatarjaENotave);
+        }
+        ndryshoEmrin(emriFromParam) {
+          this.emerStudenti = emriFromParam;
+        }
+      }
+      const StudentiObject = new Studenti();
+      console.log("Emri i keti studenti eshte : ", StudentiObject.emerStudenti);
+      console.log("nota e 2 e studentit eshte : : ", StudentiObject.notatEStudentit[1]);
+
+      class Nxenesi {
+        constructor(emerProp, mbiemerProp, notat1, notat2) {
+          this.emri = emerProp;
+          this.mbiemri = mbiemerProp;
+          this.notat = {
+            fizike: notat1,
+            matematike: notat2,
+          };
+        }
+        merrNota2() {
+          console.log("Nota e  2 e mat eshte : ", this.notat.fizike[1]);
+        }
+      }
+      const nxenesiObj = new Nxenesi("Klajdi", "Zmalaj", [8, 9, 10], [6, 7, 9]);
+      //
+      const nxenesiObj2 = new Nxenesi("Andi", "Rama", [4, 6, 7], [6, 7, 9]);
+
+      class Drejtkendesh {
+        constructor(brinjaA, brinjaB) {
+          this.brinja1 = brinjaA;
+          this.brinja2 = brinjaB;
+        }
+        gjejS() {
+          const sip = this.brinja1 * this.brinja2;
+          console.log("Sip e kemi : ", sip);
+        }
+        gjejP() {
+          const perim = this.brinja1 * 2 + this.brinja2 * 2;
+          console.log("PErimetri e kemi : ", perim);
+        }
+      }
+
+      const drejtKendeshObj = new Drejtkendesh(10, 20);
+
+      class LlogariaBankare {
+        constructor(accNr, balance) {
+          this.accNr = accNr;
+          this.balance = balance;
+          console.log("Ju per accountin", accNr, " keni ", balance, " lek");
+        }
+        deposit(vlera) {
+          this.balance += vlera;
+          console.log("Sapo depozitove", vlera);
+        }
+        withdraw(vleraETerhequr) {
+          this.balance -= vleraETerhequr;
+          console.log("Sapo terhoqe", vleraETerhequr);
+        }
+
+        details() {
+          console.log("Detajet e account jane : ", this.accNr, this.balance);
+        }
+      }
+
+      const BankaObj = new LlogariaBankare(13254235345, 1000);
+    </script>
+  </body>
+</html>

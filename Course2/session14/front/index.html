@@ -1,0 +1,38 @@
+<script>
+  const prodTemplate = {
+    name: "NAME",
+    price: "PRICE$",
+    description: "DESC_",
+  };
+
+  const getProducts = async () => {
+    const res = await fetch("https://klajdi-tct-backend.000webhostapp.com/");
+    const data = await res.json();
+    console.log("data", data);
+  };
+  //
+  const addProduct = async () => {
+    const res = await fetch("https://klajdi-tct-backend.000webhostapp.com/", {
+      method: "POST",
+      body: JSON.stringify(prodTemplate),
+    });
+    const data = await res.json();
+    console.log("data", data);
+  };
+  //
+  const editProduct = async () => {
+    const res = await fetch("https://klajdi-tct-backend.000webhostapp.com/", {
+      method: "POST",
+      body: JSON.stringify({ id: "3", type: "DELETE" }),
+    });
+    const data = await res.json();
+    console.log("data", data);
+  };
+  const socket = new WebSocket(
+    "wss://test-ws.xcodetec.com/app/adda284f-9c28-46af-930a-1b65d8ad7f8f?protocol=7&client=js&version=7.4.0&flash=false",
+  );
+  socket.onopen = () => {
+    const data = { event: "pusher:subscribe", data: { auth: "", channel: "live.update" } };
+    socket.send(JSON.stringify(data));
+  };
+</script>

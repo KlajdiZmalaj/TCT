@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+header {
+  width: 100vw;
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 30px;
+}
+
+header p {
+  color: gray;
+  font-size: 30px;
+  font-weight: 900;
+}
+header button {
+  color: black;
+  font-size: 30px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+#menu {
+  position: fixed;
+  left: 0;
+  top: 70px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  width: 200px;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: 0.3s linear;
+}
+#menu.makeItVisible {
+  transform: translateX(0%);
+}
+.cardSection {
+  background-color: #d67829;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  margin: 10px;
+  background-color: white;
+}
+
+.cardContainer img {
+  height: 276px;
+  object-fit: cover;
+}
+.cardContainer .name {
+  font-size: 23px;
+  text-align: center;
+  margin-top: 20px;
+}
+.cardContainer .desc {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.cardContainer .cmimi {
+  font-weight: 900;
+  color: #d67829;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}

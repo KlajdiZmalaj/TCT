@@ -1,0 +1,53 @@
+<html>
+  <head></head>
+  <body>
+    <p id="screenParagraph"></p>
+    <h1></h1>
+
+    <p id="timer"></p>
+    <p id="loading">Loading</p>
+  </body>
+  <script>
+    //ush 1
+    const myScreenP = document.getElementById("screenParagraph");
+    myScreenP.innerHTML = `Ekrani juaj eshte : ${window.screen.availWidth}px x ${window.screen.availHeight}px`;
+
+    //ush 2
+    let myH1 = document.getElementsByTagName("h1")[0];
+    myH1.innerText = window.location.hostname;
+
+    //ush3
+    function ndryshoNgjyren() {
+      document.body.style.backgroundColor = "blue";
+      window.setTimeout(() => {
+        document.body.style.backgroundColor = "red";
+      }, 2000);
+    }
+
+    //ush 4
+    let timerP = document.getElementById("timer");
+
+    const javascriptTimer = (seconds) => {
+      const myInterval = window.setInterval(() => {
+        seconds = seconds - 1;
+        timerP.innerText = seconds == 1 ? `1 sek` : `${seconds} sekonda`;
+        if (seconds == 0) {
+          clearInterval(myInterval);
+        }
+      }, 1000);
+    };
+    //ush5
+    let counterDots = 1;
+    const loadingP = document.getElementById("loading");
+    const animateLoading = () => {
+      setInterval(() => {
+        loadingP.innerText = "Loading" + ".".repeat(counterDots);
+        if (counterDots === 3) {
+          counterDots = 0;
+        } else {
+          counterDots += 1;
+        }
+      }, 300);
+    };
+  </script>
+</html>

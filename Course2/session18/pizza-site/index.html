@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <h1>Menu</h1>
+    <div class="btnsWrapper">
+      <button onclick="getPizza()">Pizza</button>
+      <button onclick="getSandwich()">Sandwich</button>
+      <button>Sufllaqe</button>
+    </div>
+    <section id="foodContainer">
+      <div class="foodItem sandwich">
+        <div class="price">${pizzaObj.price}</div>
+        <img src="https://pizzaitalia.al/images/sandwich2.min.jpg" alt="" />
+        <div class="foodName">${pizzaObj.name}</div>
+        <div class="foodDesc">${pizzaObj.description}</div>
+      </div>
+    </section>
+    <button id="loadMore" onclick="getPizza()">Trego me shume</button>
+    <script src="./main.js"></script>
+  </body>
+</html>

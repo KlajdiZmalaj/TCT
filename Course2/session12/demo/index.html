@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="myParagraph"></p>
+    <button onclick="refreshPage()" id="myBtn">Refresh page</button>
+    <h1>Une jam :</h1>
+    <ul class="myUl"></ul>
+
+    <script>
+      let myH1 = document.querySelector("h1");
+      const nameFromStorage = localStorage.getItem("name");
+
+      myH1.innerHTML += nameFromStorage;
+
+      //hapi selektrojme elementin ne dom
+      const myUlVar = document.querySelector(".myUl");
+      //krijojme nje interval cdo 500ms
+      const myInterval1 = window.setInterval(() => {
+        //shtojme ne UL nje list item te ri
+        myUlVar.innerHTML += "<li> list item </li>";
+      }, 500);
+
+      //stops interval
+      clearInterval(myInterval1);
+
+      console.log("myUlVar", myUlVar);
+      const myP = document.getElementById("myParagraph");
+
+      myP.innerHTML = "Screen size eshte : ";
+
+      window.setTimeout(() => {
+        myP.innerHTML += window.screen.availWidth;
+      }, 5000);
+
+      const myInterval = window.setInterval(() => {
+        console.log("Hellooo");
+      }, 2000);
+
+      //pastron intervalin
+      window.clearInterval(myInterval);
+
+      const orientation = window.screen.orientation.type;
+      if (orientation == "landscape-primary") {
+        //logiq for ;andscape-primary
+      } else if (orientation == "portrait") {
+        //cel portrait
+      } else if (orientation == "landscape") {
+        //cel i kthyer landscape
+      }
+
+      function refreshPage() {
+        window.location.reload();
+      }
+    </script>
+  </body>
+</html>
